@@ -9,7 +9,10 @@ jamq: front-door.rkt package-lock.json
 package-lock.json: package.json
 	npm i
 
-
+test: front-door.rkt
+	rm -rf build
+	raco test test_middleware.rkt
+	
 clean:
 	rm -rf build front-door 
 
