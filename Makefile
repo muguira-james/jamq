@@ -11,7 +11,7 @@ package-lock.json: package.json
 
 test: front-door.rkt
 	rm -rf build
-	raco test test_middleware.rkt
+	raco test test-middleware.rkt
 	
 clean:
 	rm -rf build front-door 
