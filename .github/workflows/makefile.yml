@@ -17,6 +17,8 @@ jobs:
  
       
     - name: Install dependencies
-      run: make
+      run: |
+        sudo apt update
+        make
       
  
